@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Driven Eats</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap");
+    </style>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <h1>DrivenEats</h1>
+      <h2>Sua comida em 6 minutos</h2>
+    </header>
+    <main>
+      <section class="carrossel">
+        <h3>Primeiro, seu prato</h3>
+        <ul class="carrossel-lista prato">
+          <li
+            class="lista-items"
+            onclick="selecionarPrato(this, 'hamburguer', 34.90)"
+          >
+            <img src="img/hamburguer.jpg" alt="" />
+            <h4>Hamburguer</h4>
+            <h5>Delicioso hamburguer artesanal</h5>
+            <h6>R$ 34,90</h6>
+            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+          </li>
+          <li
+            class="lista-items"
+            onclick="selecionarPrato(this, 'Pizza', 45.90)"
+          >
+            <img src="img/pizza.jpg" alt="" />
+            <h4>Pizza da Casa</h4>
+            <h5>Uma saborosa pizza sabor da casa</h5>
+            <h6>R$ 45,90</h6>
+            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+          </li>
+          <li
+            class="lista-items"
+            onclick="selecionarPrato(this, 'Batata Frita', 26.90)"
+          >
+            <img src="img/batata frita.jpg" alt="" />
+            <h4>Batata Frita</h4>
+            <h5>Uma crocante porção de batatas fritas</h5>
+            <h6>R$ 26,90</h6>
+            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+          </li>
+        </ul>
+      </section>
+
+      <section class="carrossel">
+        <h3>Agora, sua bebida</h3>
+        <ul class="carrossel-lista bebida">
+          <li
+            class="lista-items"
+            onclick="selecionarBebida(this, 'Coca-cola', 7.90)"
+          >
+            <img src="img/soda.jpg" alt="" />
+            <h4>Coca-Cola</h4>
+            <h5>Copo 350ml</h5>
+            <h6>R$ 7,90</h6>
+            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+          </li>
+          <li
+            class="lista-items"
+            onclick="selecionarBebida(this, 'Iced Tea', 9.90)"
+          >
+            <img src="img/ice tea.jpg" alt="" />
+            <h4>Chá Gelado</h4>
+            <h5>Copo 350ml</h5>
+            <h6>R$ 9,90</h6>
+            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+          </li>
+          <li
+            class="lista-items"
+            onclick="selecionarBebida(this, 'Limonada', 8.90)"
+          >
+            <img src="img/limonada.jpg" alt="" />
+            <h4>Limonada</h4>
+            <h5>Copo 350ml</h5>
+            <h6>R$ 8,90</h6>
+            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+          </li>
+        </ul>
+      </section>
+
+      <section class="carrossel">
+        <h3>Por fim, sua sobremesa</h3>
+        <ul class="carrossel-lista sobremesa">
+          <li
+            class="lista-items"
+            onclick="selecionarSobremesa(this, 'Brownie', 27.90)"
+          >
+            <img src="img/brownie.jpg" alt="" />
+            <h4>Brownie</h4>
+            <h5>Brownie topzera</h5>
+            <h6>R$ 27,90</h6>
+            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+          </li>
+          <li
+            class="lista-items"
+            onclick="selecionarSobremesa(this, 'Donuts', 18.90)"
+          >
+            <img src="img/donuts.jpg" alt="" />
+            <h4>Donuts</h4>
+            <h5>Um donuts topzera</h5>
+            <h6>R$ 18,90</h6>
+            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+          </li>
+          <li
+            class="lista-items"
+            onclick="selecionarSobremesa(this, 'Sorvete', 16.90)"
+          >
+            <img src="img/ice cream.jpg" alt="" />
+            <h4>Sorvete</h4>
+            <h5>Um sorvete legalzinho</h5>
+            <h6>R$ 16,90</h6>
+            <ion-icon class="check" name="checkmark-circle"></ion-icon>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <button onclick="fecharPedido()" disabled>
+        Selecione os 3 itens para fechar o pedido
+      </button>
+    </footer>
+    <!-- icones  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- script  -->
+    <script src="main.js"></script>
+  </body>
+</html>
